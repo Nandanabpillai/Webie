@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <title>Document</title>
 </head>
 <header>
     <h1 align="center">Bubble Sort</h1>
     <nav>
+        <div class="info">
+            <p>The working procedure of bubble sort is simplest.
+                Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. The worst-case condition for bubble sort occurs when the array is reverse sorted.
+In the worst case, the total number of iterations or passes required to sort a given array is (n-1), where ‘n’ is a number of elements present in the array..</p>
+                <p>Although it is simple to use, it is primarily used as an educational tool because the performance of bubble sort is poor in the real world. It is not suitable for large data sets.</p>
+                <p>Best case scenerio: O(N) <br>
+                    Worst case scenerio: O(N^2)</p>
+                <p>Bubble short is majorly used where complexity does not matter, and where simple and short code is preferred
+                </p>
+        </div>
         <div class="row">
-            <div class="col gap-2 d-sm-flex" id="newArray">
-                <button type="button" class="btn btn-outline-success btn-dark newArray">New Array</button>
-            </div>
+            
             <div class="col" id="input">
                 <span id="size">Size
                     <input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
@@ -28,6 +37,9 @@
                 <button type="button" class="btn btn-outline-primary btn-dark insertionSort">Insertion Sort</button>
                 <button type="button" class="btn btn-outline-primary btn-dark quickSort">Quick Sort</button>
                 <button type="button" class="btn btn-outline-primary btn-dark mergeSort">Merge Sort</button> -->
+            </div>
+            <div class="col gap-2 d-sm-flex" id="newArray">
+                <button type="button" class="btn btn-outline-success btn-dark newArray">New Array</button>
             </div>
         </div>
     </nav>

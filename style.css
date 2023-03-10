@@ -1,11 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     padding: 0 20px 30px 0;
     line-height: 1.4;
+    background: rgba(91, 51, 92, 0.255);
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+.nav{
+    display: flex;
+    /* flex-direction: row; */
+}
+.info p{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
 }
 .flex-container{
-    margin-top: 20px;
+    margin-top: 2em;
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
@@ -15,19 +30,41 @@ body {
 }
 
 .flex-item{
-    background: cyan;
+    background: #6096B4;
     border: 1pt solid black;
     width: 10px;
     transition: 0.1s all ease;
 }
 
 .row{
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* grid-template-columns: 1fr 1fr 0.5fr 1fr; */
+    margin-top: 2.36em;
 }
-
+.btn{
+    border-radius: 0.5em;
+    border:none;
+    padding: 0.75em;
+    background-color: rgba(225, 238, 234, 0.316);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.288);
+}
+.col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 25%;
+}
+.btn:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
 #input{
     display: flex;
-    padding: 10px;
-    justify-content: space-around;
+    padding: 8px;
+    font-size: 17px;
+    justify-content: space-between;
+
 }

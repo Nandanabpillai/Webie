@@ -10,10 +10,18 @@
 <header>
     <h1 align="center">Merge Sort</h1>
     <nav>
+        <div class="info">
+            <p>Merge sort is the sorting technique that follows the divide and conquer approach.
+
+                Merge sort is similar to the quick sort algorithm as it uses the divide and conquer approach to sort the elements. It is one of the most popular and efficient sorting algorithm. It divides the given list into two equal halves, calls itself for the two halves and then merges the two sorted halves. We have to define the merge() function to perform the merging.
+
+</p>
+                <p>The sub-lists are divided again and again into halves until the list cannot be divided further. Then we combine the pair of one element lists into two-element lists, sorting them in the process. The sorted two-element pairs is merged into the four-element lists, and so on until we get the sorted list.
+                </p>
+                <p>Time complexity in all cases: O(N*logN)</p>
+        </div>
         <div class="row">
-            <div class="col gap-2 d-sm-flex" id="newArray">
-                <button type="button" class="btn btn-outline-success btn-dark newArray">New Array</button>
-            </div>
+            
             <div class="col" id="input">
                 <span id="size">Size
                     <input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
@@ -24,6 +32,9 @@
             </div>
             <div class="col gap-2 d-sm-flex justify-content-end">
                 <button type="button" class="btn btn-outline-primary btn-dark mergeSort">Merge Sort</button>
+            </div>
+            <div class="col gap-2 d-sm-flex" id="newArray">
+                <button type="button" class="btn btn-outline-success btn-dark newArray">New Array</button>
             </div>
         </div>
     </nav>

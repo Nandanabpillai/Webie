@@ -10,10 +10,16 @@
 <header>
     <h1 align="center">Insertion Sort</h1>
     <nav>
+        <div class="info">
+            <p>Insertion sort works similar to the sorting of playing cards in hands. It is assumed that the first card is already sorted in the card game, and then we select an unsorted card. If the selected unsorted card is greater than the first card, it will be placed at the right side; otherwise, it will be placed at the left side. Similarly, all unsorted cards are taken and put in their exact place.
+
+                The same approach is applied in insertion sort. The idea behind the insertion sort is that first take one element, iterate it through the sorted array. Although it is simple to use, it is not appropriate for large data sets. Insertion sort is less efficient than the other sorting algorithms like heap sort, quick sort, merge sort, etc.</p>
+                <p>Insertion sort has various advantages such as simple implementation, efficient for small data sets, and adaptiveness, i.e., it is appropriate for data sets that are already substantially sorted.</p>
+                <p>Best case scenerio: O(N) <br>
+                    Worst case scenerio: O(N^2)</p>
+        </div>
         <div class="row">
-            <div class="col gap-2 d-sm-flex" id="newArray">
-                <button type="button" class="btn btn-outline-success btn-dark newArray">New Array</button>
-            </div>
+            
             <div class="col" id="input">
                 <span id="size">Size
                     <input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
@@ -27,6 +33,9 @@
                 <button type="button" class="btn btn-outline-primary btn-dark insertionSort">Insertion Sort</button>
                 <!-- <button type="button" class="btn btn-outline-primary btn-dark quickSort">Quick Sort</button>
                 <button type="button" class="btn btn-outline-primary btn-dark mergeSort">Merge Sort</button> -->
+            </div>
+            <div class="col gap-2 d-sm-flex" id="newArray">
+                <button type="button" class="btn btn-outline-success btn-dark newArray">New Array</button>
             </div>
         </div>
     </nav>

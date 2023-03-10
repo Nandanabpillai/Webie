@@ -8,11 +8,14 @@
 }
 body
 {
-    display: flex;
-    justify-content: center;
+    
     align-items:center;
     min-height: 100vh;
-    background: black;
+    background: rgba(40, 0, 41, 0.318);
+}
+h1{
+    text-align: center;
+    margin-top: 0.8em;
 }
 .container
 {
@@ -34,6 +37,7 @@ body
                 -5px -5px 5px rgba(255,255,255,0.5s);
     border-radius: 15px;
     margin: 30px;
+    background-color: #e0dddd;
 }
 .container .card .box
 {
@@ -42,7 +46,7 @@ body
     left: 20px;
     right: 20px;
     bottom: 20px;
-    background: #ebf5fc;
+    background: #dad6d6;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     border-radius: 15px;
     display: flex;
@@ -52,9 +56,10 @@ body
 }
 .container .card:hover .box
 {
-    transform: translateY(-50px);
+    /* transform: translateY(-40px); */
     box-shadow: 0 10px 40px rgba(0,0,0,0.2);
     background: linear-gradient(45deg,#b95ce4,#4f29cd);
+    scale: 1.18;
 }
 .container .card .box .content
 {

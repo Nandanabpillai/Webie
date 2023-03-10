@@ -10,10 +10,19 @@
 <header>
     <h1 align="center">Quick Sort</h1>
     <nav>
+        <div class="info">
+            <p>The working procedure of Quicksort is also simple. Sorting is a way of arranging items in a systematic manner. Quicksort is the widely used sorting algorithm that makes n log n comparisons in average case for sorting an array of n elements. It is a faster and highly efficient sorting algorithm. This algorithm follows the divide and conquer approach. Divide and conquer is a technique of breaking down the algorithms into subproblems, then solving the subproblems, and combining the results back together to solve the original problem.</p>
+
+               <p> Divide: In Divide, first pick a pivot element. After that, partition or rearrange the array into two sub-arrays such that each element in the left sub-array is less than or equal to the pivot element and each element in the right sub-array is larger than the pivot element.
+            </p>
+                <p>Conquer: Recursively, sort two subarrays with Quicksort.</p>
+                <p>Combine: Combine the already sorted array.</p>
+                <p>Quicksort picks an element as pivot, and then it partitions the given array around the picked pivot element. In quick sort, a large array is divided into two arrays in which one holds values that are smaller than the specified value (Pivot), and another array holds the values that are greater than the pivot.
+
+                    After that, left and right sub-arrays are also partitioned using the same approach. It will continue until the single element remains in the sub-array.</p>
+        </div>
         <div class="row">
-            <div class="col gap-2 d-sm-flex" id="newArray">
-                <button type="button" class="btn btn-outline-success btn-dark newArray">New Array</button>
-            </div>
+            
             <div class="col" id="input">
                 <span id="size">Size
                     <input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
@@ -24,6 +33,9 @@
             </div>
             <div class="col gap-2 d-sm-flex justify-content-end">
                 <button type="button" class="btn btn-outline-primary btn-dark quickSort">Quick Sort</button>
+            </div>
+            <div class="col gap-2 d-sm-flex" id="newArray">
+                <button type="button" class="btn btn-outline-success btn-dark newArray">New Array</button>
             </div>
         </div>
     </nav>
